@@ -1,0 +1,155 @@
+* {
+    padding: 10;
+    margin: 10;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  body {
+    background-color: #fff; 
+    margin: 0%;
+  }
+
+    a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 30px;
+    }
+
+    li {
+    list-style: none;
+    }
+
+    .navibar {
+        display:block;
+        align-items: center;
+        padding: 10px;
+        background-color: #d7dbd9;
+        }
+        
+    .navilinks a {
+        color: #4F7961;
+        }
+  
+    .menu {
+     display: flex;
+        gap: 2em;
+        font-size: 18px;
+        }
+
+    .menu li:hover {
+        background-color: #fff;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        }
+        
+    .menu li {
+        padding: 5px 14px;
+        }
+        
+    .shop {
+        position: relative;
+    }
+        
+    .dropdown {
+        background-color: #d7dbd9;
+        padding: 1em ;
+        position: absolute;
+        display: none;
+        border-radius: 8px;
+        top: 45px;
+        margin-left: -6em;
+    }
+        
+    .dropdown li {
+        padding: 1em;
+        width: 15em;
+        text-align:center;
+    }
+        
+    .dropdown li:hover {
+        background-color: #fff;
+    }
+        
+    .shop:hover .dropdown {
+        display: block;
+    }
+
+    input[type=checkbox]{
+            display: none;
+    }
+            
+    .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+    }
+            
+    @media (max-width: 768px) {
+    .menu {
+     display:none;
+     position: absolute;
+     background-color:#d7dbd9;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+            
+    .menu li:hover {
+        display: inline-block;
+        background-color:#d7dbd9;
+        transition: 0.3s ease;
+    }
+            
+    .menu li + li {
+            margin-top: 12px;
+    }
+            
+    input[type=checkbox]:checked ~ .menu{
+            display: block;
+    }
+            
+    .hamburger {
+            display: block;
+    }
+            
+    .dropdown {
+     left: 50%;
+     top: 30px;
+     transform: translateX(35%);
+    }
+            
+    .dropdown li:hover {
+     background-color: #d7dbd9;
+    }
+  }
+
+  .title{
+    color: #77697c;
+    font-size: 200%;
+    padding-left: 37.5%;  
+  }
+
+  hr {
+    border: none;
+    height: 5px;
+    background-color: #77697c;
+}
+
+  .banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+   } 
+
+video{
+    margin-left: 32%;
+}
+
+pre{
+    font-size: 170%;
+    text-align: center;
+    color:#77697c ;
+}
+
